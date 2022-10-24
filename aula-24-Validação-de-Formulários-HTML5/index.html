@@ -1,0 +1,54 @@
+<!DOCTYPE html><!--DOCTYPE define a versão do html que vamos usar: no caso atual, vamos usar a html5-->
+<html>
+<head>
+    <title>Validação de Formulário - Com HTML 5</title>
+</head>
+<body>
+    <h1>Validação com HTML 5</h1>
+    <ul>
+        <h2>Benefícios da Validação de Formulários com HTML</h2>
+        
+        <li>Garante que o usuário insira corretamente os dados exigidos por cada entrada de Formulário.</li>
+        <li>Poupa o trabalho do servidor de verificar os dados.</li>
+        <li>Permite que os usuários verifiquem mais rápido se há algum problema nas informações inseridas, do que ter que esperar o servidor verificar.</li>
+    </ul>
+
+    <form action="#">
+        <label for="usuario">Usuário: </label>
+        <input id="usuario" type="text" name="usuario" required="required" /><br /><!--required exige que o campo seja preenchido-->
+        <label for="senha"  name="senha">Senha: </label>
+        <input id="senha" type="password" name="senha" required="required" />
+        <input type="submit" value="enviar" />
+    </form>
+    <hr />
+
+    <h2>Entrada de Data</h2>
+    <form action="#">
+        <label for="data">Data: </label>
+        <input id="data" type="date" name="depart" />
+        <input type="submit" value="enviar" />
+    </form>
+    <hr />
+
+    <h2>Entrada de EMAIL e URL</h2>
+    <form action="#">
+        <p>Insira seu email: </p>
+        <input type="email" name="email" />
+        <input type="submit" value="enviar" />
+    </form>
+    <form action="">
+        <p>Entre com o endereço do site: </p>
+        <input type="url" name="wesite" placeholder="url" />
+        <input type="submit" value="enviar"  />
+    </form>
+    <hr />
+
+    <h2>Entrada de Pesquisa</h2>
+    <form action="#">
+        <p>Pesquisar: </p>
+        <input type="search" placeholder="entre com sua pesquisa" />
+        <input type="submit" value="pesquisar">
+    </form>
+
+</body>
+</html>

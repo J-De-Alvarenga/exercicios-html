@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Rotulando Formulários</title>
+    </head>
+    <body>
+        <h1>Rotulando Formulários - Label</h1>
+        <p>Rotular Formulários é uma prática muito boa, pois ajuda pessoas com deficiência visual interagir com a página web.</p>
+
+        <!--Existe duas formas de se rotular um FORM-->
+        
+        <!--Primeira Forma: Envolver a descrição do texto e a entrada do FORM-->
+        
+        <form action="#">
+            <label>Idade: 
+                <input type="text" name="idade">
+            </label>     
+        </form>
+        <p><strong>OBS:</strong> Não é necessário clicar diretamente na caixa para interagir. Clicando na palavra idade, já interagimos com o formulário.</p>
+
+        <!--Segunda Forma: Ser mantido separado do controle do FORM e usar o FOR para ligá-los-->
+
+        <form action="#">
+            <p>Selecione seu gênero: </p>
+            <input id="feminino" type="radio" name="genero" value="f" /><!--O for é ligado ao Id da entrada de formulário-->
+            <label for="feminino">Feminino</label>
+            <input id="masculino" type="radio" name="genero" value="m" />
+            <label for="masculino">Masculino</label>
+        </form>
+        <p><strong>OBS:</strong> Não é necessário clicar diretamente no botão para interagir. Clicando no gênero, já interagimos com o formulário.</p>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <h2>Entrada de Texto</h2>
+        <form action="#"><!--atributo action: recebe a url do endereço do servidor que irá armazernar os dados do formulário-->
+            <p>Nome de usuário: <input type="text" name="usuario" maxlength="9"/></p>
+            <!--type: tipo do formulário,
+                name: nome da entrada que o servidor identificará o que é.
+                por exemplo: usário ou senha
+                maxlength: limita a quantidade de caracteres que podem ser inseridos
+            -->
+        </form>
+        <hr />
+       
+        <h2>Entrada de Senha</h2>
+        <form action="#">
+            <p>
+                Nome de senha: <input type="password" name="senha" maxlength="9" />
+            </p>
+        </form>
+        <hr />
+       
+        <h2>Área de Texto</h2>
+        <form action="#">
+            <p>O que você achou desse post ?</p>
+            <textarea name="comentarios" cols="20" rows="4">Digite seus comentários</textarea>
+        </form>
+        <hr />
+       
+        <h2>Botões de Rádio</h2>
+        <form action="#">
+            <p>Selecione seu gênero musical favorito: 
+                <br />
+                <input type="radio" name="genero" value="rock" />Rock
+                <input type="radio" name="genero" value="pagode" />Pagode
+                <input type="radio" name="genero" value="funk" />Funk
+                <input type="radio" name="genero" value="sertanejo" />Sertanejo
+            </p>
+            <!--os atributos names todos devem ter o mesmo valor,
+                os atributos values são os nomes reais dos gêneros, logo são diferentes em cada opção
+            -->
+        </form>
+        <hr />
+        
+        <h2>Caixa de Verficação</h2>
+        <form action="#">
+            <p>
+                Por favor selecione seu serviço de música favorito:
+                <br />
+                <input type="checkbox" name="serviço" value="itunes" />Itunes
+                <input type="checkbox" name="serviço" value="spotify" />Spotify
+                <input type="checkbox" name="serviço" value="deezer" />Deezer
+            </p>
+            <!--Podem ser marcadas e desmarcardas mais de uma vez, os botões de rádio não-->
+        </form>
+        <hr />
+       
+        <h2>Caixa de Lista Suspensa</h2>
+        <form action="#">
+            <p>Onde você prefere ouvir música ?</p>
+            <select name="dispositivos">
+                <option value="ipod">Ipod</option>
+                <option value="radio">Radio</option>
+                <option value="computador">Computador</option>
+            </select>
+        </form>
+       
+        <hr />
+        <h2>Caixa de Entrada de Arquivo</h2>
+        <form action="#">
+           <p>Selecione sua faixa MP3:
+                <input type="file" name="arquivos de música">
+            </p>
+        </form>
+       
+        <hr />
+        <h2>Botão de Enviar</h2>
+        <form action="#">
+            <p>Cadastre seu email na lista:</p>
+            <input type="text" name="email" />
+            <input type="submit" name="cadastro" value="cadastrar" />
+        </form>
+        <hr />
+
+        <h2>Botão de Imagem</h2>
+        <form action="#">
+            <input type="text" name="botão" />
+            <input type="image" src="button.png" width="100px" height="30px" />
+        </form>
+        <hr />
+
+        <h2>Botões</h2>
+        <form action="#">
+            <p>Clique no Botão: </p>
+            <button>
+                <img src="button.png" alt="add" width="10px" height="10px" /> 
+                Add 
+            </button>
+        </form>
+        <hr />
+
+        
+    </body>
+</html>
